@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.Chip.Assist.Elevated"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxWidth="300dp"
+    android:text="@string/label_received_message"
+    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+    app:chipIconSize="24dp"
+    app:chipMinTouchTargetSize="40dp"
+    app:closeIcon="@drawable/outline_close_24"
+    app:closeIconEnabled="true" />

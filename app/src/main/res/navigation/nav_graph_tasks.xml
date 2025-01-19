@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tasks"
+    app:startDestination="@id/tasksFragment">
+
+    <argument
+        android:name="showSearchView"
+        android:defaultValue="true"
+        app:argType="boolean" />
+
+    <argument
+        android:name="showNavigationRailView"
+        android:defaultValue="true"
+        app:argType="boolean" />
+
+    <argument
+        android:name="showBottomNavigationView"
+        android:defaultValue="true"
+        app:argType="boolean" />
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.kiparys.ui.tasks.TasksFragment"
+        android:label="TasksFragment"
+        tools:layout="@layout/fragment_tasks" />
+
+</navigation>

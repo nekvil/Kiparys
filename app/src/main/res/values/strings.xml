@@ -1,0 +1,471 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Kiparys</string>
+    <string name="sign_in_tab">Вход</string>
+    <string name="sign_up_tab">Регистрация</string>
+
+    <string name="page_title_account_section">Аккаунт</string>
+    <string name="page_title_privacy_policy">Политика конфиденциальности</string>
+    <string name="page_title_personal_info_section">Персональная информация</string>
+    <string name="page_title_security_section">Безопасность</string>
+
+    <string name="page_text_privacy_policy">
+        \t\t\tМы уважаем вашу конфиденциальность и обязуемся защищать ваши персональные данные. Настоящая политика конфиденциальности объясняет, как мы собираем, используем, храним и передаем вашу информацию при использовании приложения Kiparys. Прежде чем продолжить использование нашего приложения, ознакомьтесь с данной политикой, чтобы понять, как обрабатываются ваши данные.
+
+        \n\n\t\t\t**1. Сбор данных**:
+        \n\t\t\tМы можем собирать следующие типы данных:
+        \n\t\t\t- Персональная информация: имя, адрес электронной почты, номер телефона, дата рождения и другая информация, предоставляемая вами при регистрации или использовании приложения.
+        \n\t\t\t- Данные об устройстве: информация о вашем устройстве, включая модель, операционную систему, уникальные идентификаторы устройства, IP-адрес и данные о сети.
+        \n\t\t\t- Логи активности: данные о ваших действиях в приложении, включая входы, выходы, действия в аккаунте и взаимодействие с функциональностью приложения.
+        \n\t\t\t- Локационные данные: данные о вашем местоположении, если вы предоставляете доступ к ним через настройки вашего устройства.
+        \n\t\t\t- Куки-файлы и подобные технологии: мы можем использовать их для сбора информации о вашем использовании приложения для улучшения пользовательского опыта.
+
+        \n\n\t\t\t**2. Использование данных**:
+        \n\t\t\tСобранные данные могут использоваться для следующих целей:
+        \n\t\t\t- Обеспечение работы приложения: обработка ваших запросов, предоставление доступа к функциям приложения и поддержка работы сервисов.
+        \n\t\t\t- Улучшение приложения: анализ использования, исправление ошибок и разработка новых функций, основанных на вашем опыте использования.
+        \n\t\t\t- Коммуникация: отправка уведомлений, связанных с вашим аккаунтом, и связи с вами по вопросам поддержки, обновлений, изменений в работе приложения и предоставления новостей.
+        \n\t\t\t- Безопасность: защита вашего аккаунта и предотвращение мошенничества, несанкционированного доступа и других угроз безопасности.
+        \n\t\t\t- Юридические обязательства: выполнение требований законодательства, в том числе хранение и передача данных в случаях, предусмотренных законом.
+
+        \n\n\t\t\t**3. Хранение данных**:
+        \n\t\t\tМы храним ваши персональные данные только в течение времени, необходимого для выполнения целей, для которых они были собраны, или в соответствии с требованиями законодательства. Ваши данные могут быть удалены или анонимизированы по вашему запросу или в случае, если они больше не нужны для указанных целей.
+
+        \n\n\t\t\t**4. Передача данных**:
+        \n\t\t\tМы не передаем ваши персональные данные третьим лицам без вашего явного согласия, за исключением следующих случаев:
+        \n\t\t\t- Если это необходимо для выполнения наших обязательств перед вами (например, при использовании сторонних поставщиков услуг, которые помогают нам предоставлять вам функционал приложения).
+        \n\t\t\t- Для выполнения юридических обязательств, в ответ на судебные иски или для защиты прав компании и пользователей.
+        \n\t\t\t- При продаже, слиянии или реорганизации нашей компании данные могут быть переданы новым владельцам, с соответствующими обязательствами по защите вашей конфиденциальности.
+
+        \n\n\t\t\t**5. Безопасность данных**:
+        \n\t\t\tМы принимаем все разумные меры для обеспечения безопасности ваших данных и защиты их от несанкционированного доступа, изменения, раскрытия или уничтожения. Это включает использование современных методов шифрования, защитных технологий и протоколов доступа. Однако полную безопасность данных в интернете гарантировать невозможно, поэтому мы не можем полностью исключить риски.
+
+        \n\n\t\t\t**6. Ваши права**:
+        \n\t\t\tВы имеете право:
+        \n\t\t\t- Запрашивать доступ к своим персональным данным, которые мы храним.
+        \n\t\t\t- Исправлять или обновлять свои данные, если они оказались неточными или неполными.
+        \n\t\t\t- Удалять свои данные по запросу, если это не противоречит законодательным обязательствам.
+        \n\t\t\t- Ограничивать обработку ваших данных в определенных ситуациях.
+        \n\t\t\t- Возражать против использования ваших данных для маркетинговых или иных целей, не связанных с основной работой приложения.
+
+        \n\n\t\t\t**7. Обновления политики конфиденциальности**:
+        \n\t\t\tМы можем периодически обновлять настоящую политику конфиденциальности в соответствии с изменениями законодательства или работы приложения. Мы будем уведомлять вас о любых существенных изменениях путем публикации обновленной версии политики в приложении. Мы рекомендуем периодически проверять политику конфиденциальности, чтобы оставаться в курсе изменений.
+    </string>
+
+    <string name="navigation_profile_bottom_sheet">Профиль</string>
+    <string name="navigation_projects">Проекты</string>
+    <string name="navigation_tasks">Задачи</string>
+    <string name="navigation_assistant">Ассистент</string>
+    <string name="navigation_meetings">Встречи</string>
+
+    <string name="content_description_app_icon">Иконка приложения</string>
+    <string name="content_description_user_profile_image">Изображение профиля пользователя</string>
+    <string name="content_description_copy_email">Копировать адрес электронной почты</string>
+    <string name="content_description_scroll">Содержимое экрана прокручивается</string>
+    <string name="content_description_search_bar">Поле для поиска проектов</string>
+    <string name="content_description_search_results">Результаты поиска</string>
+    <string name="content_description_navigation">Навигация по экрану</string>
+    <string name="content_description_email_icon">Иконка почты</string>
+    <string name="content_description_edit_profile_image">Редактировать фото</string>
+    <string name="content_description_birthdate_icon">Иконка даты рождения</string>
+    <string name="content_description_full_name_icon">Иконка имени</string>
+    <string name="content_description_about_icon">Иконка о себе</string>
+    <string name="content_description_profile_icon">Иконка профиля</string>
+    <string name="content_description_settings_icon">Иконка настроек</string>
+    <string name="content_description_exit_icon">Иконка выхода</string>
+    <string name="content_description_two_factor_icon">Иконка двухфакторной аутентификации</string>
+    <string name="content_description_app_theme_icon">Иконка темы приложения</string>
+    <string name="content_description_notification_icon">Иконка уведомлений</string>
+    <string name="content_description_privacy_policy_icon">Иконка политики конфиденциальности</string>
+    <string name="content_description_about_app_icon">Иконка о приложении</string>
+    <string name="content_description_delete_icon">Иконка удаления</string>
+    <string name="content_description_gallery_icon">Иконка галереи</string>
+    <string name="content_description_photo_icon">Иконка фото</string>
+
+    <string name="label_photo">Сделать фото</string>
+    <string name="label_gallery">Выбрать из галереи</string>
+    <string name="label_delete">Удалить</string>
+    <string name="label_two_factor">Двухфакторная аутентификация</string>
+    <string name="label_full_name">Ваше имя</string>
+    <string name="label_birthdate">Дата рождения</string>
+    <string name="label_about">О себе</string>
+    <string name="label_username">Имя</string>
+    <string name="label_email">Адрес почты</string>
+    <string name="label_password">Пароль</string>
+    <string name="label_profile">Мой профиль</string>
+    <string name="label_settings">Настройки</string>
+    <string name="label_exit">Выйти</string>
+    <string name="label_push_notification">Push-уведомления</string>
+    <string name="label_app_theme">Тема оформления</string>
+    <string name="label_privacy_policy">Политика конфиденциальности</string>
+    <string name="label_about_app">О приложении</string>
+    <string name="label_app_version">Версия %1$s</string>
+    <string name="label_build_version">Сборка %1$s</string>
+    <string name="label_developer_info">© %1$s fomchv</string>
+
+    <string name="info_nickname">nickname</string>
+    <string name="info_email">user@example.com</string>
+    <string name="info_full_name">Firstname Lastname</string>
+    <string name="info_about">Напишите что-нибудь о себе…</string>
+    <string name="info_password">************</string>
+    <string name="info_birthdate">Укажите дату рождения</string>
+    <string name="info_email_verified">Адрес подтверждён</string>
+    <string name="info_email_not_verified">Адрес не подтверждён</string>
+    <string name="info_two_factor_enabled">Подключена</string>
+    <string name="info_two_factor_disabled">Не подключена</string>
+    <string name="info_push_notification">Включить уведомления</string>
+    <string name="info_app_theme_system">Как в системе</string>
+    <string name="info_app_theme_dark">Тёмная</string>
+    <string name="info_app_theme_light">Светлая</string>
+    <string name="info_privacy_policy">Условия обработки данных</string>
+    <string name="info_about_app">Информация о версии и разработчике</string>
+
+    <string name="date_picker_title_birthdate">Выберите дату</string>
+    <string name="dialog_title_sign_out">Подтвердите выход</string>
+    <string name="dialog_title_password_reset">Сбросить пароль</string>
+    <string name="dialog_title_new_password">Установить новый пароль</string>
+    <string name="dialog_title_disable_notifications">Отключить уведомления?</string>
+    <string name="dialog_title_verification_email_sent">Письмо для верификации отправлено</string>
+    <string name="dialog_title_profile_image_delete">Удаление изображения профиля</string>
+    <string name="dialog_title_profile_image_preview">Предварительный просмотр </string>
+    <string name="dialog_title_email_update_success">Адрес электронной почты обновлён</string>
+
+    <string name="dialog_message_email_update_success">Сейчас вы выйдете из системы, и вам необходимо будет авторизоваться повторно с обновлёнными данными</string>
+    <string name="dialog_message_profile_image_delete">Вы уверены, что хотите удалить изображение профиля?</string>
+    <string name="dialog_message_disable_notifications">Вы не сможете получать уведомления о новых сообщениях, задачах и обновлениях в проектах</string>
+    <string name="dialog_message_password_reset">Отправим ссылку на почту</string>
+    <string name="dialog_message_sign_out">Вы уверены, что хотите выйти из приложения?</string>
+    <string name="dialog_message_verification_register_email_sent">Чтобы завершить регистрацию, перейдите по ссылке, отправленной на почту %1$s</string>
+    <string name="dialog_message_verification_update_email_sent">Чтобы завершить обновление, перейдите по ссылке, отправленной на почту %1$s</string>
+    <string name="dialog_title_email_recovery_success">Смена электронной почты отменена</string>
+    <string name="dialog_message_email_recovery_success">Если вы не инициировали этот процесс, ваши данные могли быть скомпрометированы. Рекомендуем сменить пароль для безопасности вашей учётной записи</string>
+    <string name="dialog_title_email_verification_success">Регистрация завершена</string>
+    <string name="dialog_message_email_verification_success">Ваш адрес электронной почты успешно подтверждён. Теперь вы можете войти в свой аккаунт</string>
+
+    <string name="action_delete">Удалить</string>
+    <string name="action_yes">Да</string>
+    <string name="action_ok">Хорошо</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_confirm">Подтвердить</string>
+    <string name="action_send">Отправить</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_sign_in">Войти</string>
+    <string name="action_sign_up">Зарегистрироваться</string>
+    <string name="action_password_reset">Не помню пароль</string>
+    <string name="action_back">Назад</string>
+    <string name="action_delete_account">Удалить аккаунт</string>
+
+    <string name="user_first_name_key">firstName</string>
+    <string name="user_profile_image_key">profileImageUrl</string>
+
+    <string name="users_db_reference">users</string>
+
+    <string name="toast_email_copied">Адрес скопирован</string>
+    <string name="toast_camera_permission_denied">Доступ к камере отклонен</string>
+    <string name="toast_camera_permission_required">Для съёмки фотографий требуется разрешение на доступ к камере</string>
+
+    <string name="date_format">dd.MM.yyyy</string>
+
+    <string name="error_user_deletion_failed">Не удалось удалить пользователя</string>
+    <string name="error_name_empty">Имя не может быть пустым</string>
+    <string name="error_email_empty">Email не может быть пустым</string>
+    <string name="error_email_invalid">Некорректный email</string>
+    <string name="error_email_send_failed">Ошибка при отправке email</string>
+    <string name="error_profile_image_upload">Ошибка загрузки изображения пользователя</string>
+    <string name="error_user_data_save">Ошибка при сохранении данных пользователя</string>
+    <string name="error_invalid_email_format">Некорректный формат email</string>
+    <string name="error_invalid_user_token">Неверный токен пользователя</string>
+    <string name="error_network_unavailable">Ошибка сети. Повторите попытку позже</string>
+    <string name="error_password_empty">Пароль не может быть пустым</string>
+    <string name="error_password_length">Пароль должен содержать не менее 6 символов</string>
+    <string name="error_password">Неверный пароль</string>
+    <string name="error_weak_password">Пароль слишком слабый</string>
+    <string name="error_invalid_date_format">Дата должна быть в формате дд.ММ.гггг</string>
+    <string name="error_date_in_future">Дата не может быть в будущем</string>
+    <string name="error_date_in_past">Дата не может быть ранее 1900 года</string>
+    <string name="error_too_many_requests">Слишком много запросов, попробуйте позже</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_unknown_with_details">Произошла неизвестная ошибка: %1$s</string>
+    <string name="error_user_disabled">Этот аккаунт был отключен</string>
+    <string name="error_user_exists">Пользователь с таким email уже существует</string>
+    <string name="error_user_not_found">Пользователь не найден</string>
+    <string name="error_user_token_expired">Токен пользователя истёк</string>
+    <string name="error_auth_failed">Ошибка аутентификации: %1$s</string>
+    <string name="error_invalid_credentials">Неверные или устаревшие учётные данные</string>
+    <string name="error_expired_action_code">Срок действия кода истёк</string>
+    <string name="error_user_not_authenticated">Пользователь не авторизован</string>
+    <string name="error_email_not_verified">Электронная почта не подтверждена</string>
+    <string name="error_registration_failed">Произошла ошибка при регистрации. Пожалуйста, попробуйте зарегистрироваться снова</string>
+    <string name="error_sending_verification_email">Ошибка при отправке письма для подтверждения</string>
+    <string name="error_updating_profile">Ошибка при обновлении профиля</string>
+    <string name="error_loading_profile">Ошибка при загрузке данных профиля</string>
+    <string name="error_invalid_link">Неверная ссылка</string>
+    <string name="error_invalid_action_code">Недействительный код действия</string>
+    <string name="error_user_mismatch">Несоответствие пользователя</string>
+    <string name="error_requires_recent_login">Требуется недавний вход</string>
+    <string name="error_invalid_phone_number">Неправильный номер телефона</string>
+    <string name="error_missing_phone_number">Отсутствует номер телефона</string>
+    <string name="error_missing_verification_code">Отсутствует код проверки</string>
+    <string name="error_invalid_verification_code">Недействительный код проверки</string>
+    <string name="error_session_expired">Сессия истекла</string>
+    <string name="error_quota_exceeded">Превышена квота</string>
+    <string name="error_credential_already_in_use">Учетные данные уже используются</string>
+    <string name="error_custom_token_mismatch">Несоответствие кастомного токена</string>
+    <string name="error_operation_not_allowed">Операция не разрешена</string>
+    <string name="error_app_not_authorized">Приложение не авторизовано</string>
+    <string name="error_api_not_available">API недоступен</string>
+    <string name="error_web_context_canceled">Контекст веба отменён</string>
+
+    <string name="dialog_message_password_reset_link_sent">Ссылка для сброса пароля отправлена на %1$s</string>
+    <string name="snack_bar_password_reset_success">Пароль успешно изменён</string>
+
+    <string name="prompt_current_password">Текущий пароль</string>
+    <string name="prompt_current_password_required">Текущий пароль*</string>
+    <string name="prompt_unknown">Unknown</string>
+    <string name="prompt_search_hint">Поиск в Kiparys</string>
+    <string name="prompt_first_name">Имя</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="prompt_birthdate">Дата рождения</string>
+    <string name="prompt_password_invalid">Некорректный пароль</string>
+    <string name="prompt_password_helper_text">*пароль должен содержать заглавные и строчные буквы, цифры и символы</string>
+    <string name="prompt_first_name_required">Имя*</string>
+    <string name="prompt_email_required">Email*</string>
+    <string name="prompt_password_required">Пароль*</string>
+    <string name="prompt_required_helper_text">*обязательно для заполнения</string>
+    <string name="prompt_new_password">Новый пароль*</string>
+    <string name="prompt_privacy_policy_agreement">Нажимая зарегистрироваться, я соглашаюсь с условиями политики конфиденциальности</string>
+    <string name="prompt_privacy_policy_agreement_last_part">политики конфиденциальности</string>
+    <string name="prompt_about">О себе</string>
+    <string name="prompt_last_name">Фамилия</string>
+    <string name="prompt_empty_string"> </string>
+
+    <string name="notification_channel_name_project_messages">Сообщения проекта</string>
+    <string name="notification_channel_description_project_messages">Уведомления о сообщениях, связанных с проектом</string>
+    <string name="notification_channel_name_project_tasks">Задачи проекта</string>
+    <string name="notification_channel_description_project_tasks">Уведомления об обновлениях и изменениях задач проекта</string>
+    <string name="notification_channel_name_project_ideas">Идеи проекта</string>
+    <string name="notification_channel_description_project_ideas">Уведомления об обновлениях и изменениях идей проекта</string>
+    <string name="notification_channel_name_general">Общие уведомления</string>
+    <string name="notification_channel_description_general">Общие уведомления о новостях приложения, акциях и обновлениях от разработчиков</string>
+
+    <string name="helper_text_about">Расскажите немного о себе: возраст, профессия, интересы или место проживания. Например: 25 лет, разработчик из Москвы</string>
+
+    <string name="warning_image_size">Размер изображения не должен превышать 5МБ</string>
+    <string name="warning_security_sensitive">Это действие связано с безопасностью. Пожалуйста, введите текущий пароль, чтобы продолжить</string>
+    <string name="warning_account_deletion">
+    Обратите внимание, что удаление аккаунта необратимо. Все ваши данные будут потеряны без возможности восстановления.
+    \n\nЕсли вы уверены, введите свой пароль, чтобы подтвердить действие
+    </string>
+
+    <string name="label_totp">TOTP</string>
+    <string name="info_totp">Генерируйте одноразовые коды в приложении</string>
+    <string name="content_description_totp_icon">Иконка TOTP</string>
+    <string name="dialog_title_delete_account_success">Аккаунт удалён</string>
+    <string name="dialog_title_re_auth">Подтверждение действия</string>
+    <string name="prompt_code">Код</string>
+    <string name="label_secret_code">123 456 789</string>
+    <string name="label_totp_enable_instruction_1">1. Отсканируйте QR-код в приложении, например Google Authenticator, или нажмите на QR-код, чтобы автоматически открыть приложение-аутентификатор</string>
+    <string name="label_totp_enable_instruction_2">2. Скопируйте код, который сгенерирует приложение</string>
+    <string name="label_totp_enable_instruction_3">3. Вставьте этот код в поле ниже</string>
+    <string name="snack_bar_totp_enroll_success">Двухфакторная аутентификация TOTP успешно подключена</string>
+    <string name="snack_bar_totp_un_enroll_success">Двухфакторная аутентификация TOTP отключена</string>
+    <string name="dialog_title_totp_activate">Подключение TOTP</string>
+    <string name="dialog_title_revert_second_factor_addition_success">Двухфакторная аутентификация отключена</string>
+    <string name="dialog_message_revert_second_factor_addition_success">Вы успешно отключили второй фактор аутентификации. Вход в аккаунт теперь будет производиться без дополнительного подтверждения</string>
+    <string name="error_empty_code">Код не может быть пустым</string>
+    <string name="prompt_code_required">Код*</string>
+    <string name="error_multi_factor">Требуется двухфакторная аутентификация</string>
+    <string name="label_totp_information">Введите код из приложения аутентификатора</string>
+    <string name="dialog_title_totp_code_required">Введите код подтверждения</string>
+    <string name="title_choose_mfa_option">Выберите метод двухфакторной аутентификации</string>
+    <string name="error_invalid_code_length">Код должен содержать 6 символов</string>
+    <string name="error_multi_factor_aborted">Ошибка двухфакторной аутентификации</string>
+    <string name="dialog_title_password_reset_link_sent">Письмо отправлено</string>
+    <string name="chip_projects">Проекты</string>
+    <string name="chip_tasks">Задачи</string>
+    <string name="chip_ideas">Идеи</string>
+    <string name="chip_messages">Сообщения</string>
+    <string name="chip_users">Пользователи</string>
+    <string name="chip_meetings">Встречи</string>
+    <string name="content_description_fab_projects">Cоздать проект</string>
+    <string name="content_description_fab_assistant">Написать ассистенту</string>
+    <string name="content_description_fab_meetings">Создать встречу</string>
+    <string name="settings_button">Включить</string>
+    <string name="notification_disabled_message">Уведомления выключены</string>
+    <string name="action_dismiss">Отклонить</string>
+    <string name="info_meetings_start">Нажмите <b>Начать</b>, чтобы создать новую встречу или подключиться по ссылке к существующей</string>
+    <string name="info_tasks_start">Здесь Вы сможете управлять задачами, в которых назначены <b>Исполнителем</b> </string>
+    <string name="info_assistant_start">Нажмите <b>Написать</b>, чтобы начать новую переписку с чат-ботом</string>
+    <string name="info_projects_start">Нажмите <b>Создать</b>, чтобы приступить к работе с Вашим новым проектом</string>
+    <string name="label_start_meeting">Начать встречу прямо сейчас</string>
+    <string name="label_meeting_get_link">Получить ссылку на встречу</string>
+    <string name="label_meeting_enter_code">Войти с кодом</string>
+    <string name="animation_projects_url">https://lottie.host/4aa25abf-175d-4a40-aeb6-c2c14c1a6d19/7UK5J1VbDE.lottie</string>
+    <string name="animation_tasks_url" tools:ignore="TypographyDashes">https://lottie.host/5fc48b90-1026-4639-a3e7-9c01aa9aff23/1whwyI5R4Y.lottie</string>
+    <string name="animation_assistant_url" tools:ignore="TypographyDashes,Typos">https://lottie.host/1fc639b3-6e82-460d-973b-d0626878e540/qv1Od8IpAA.lottie</string>
+    <string name="animation_meetings_url" tools:ignore="TypographyDashes">https://lottie.host/706d0def-4513-4ca7-8035-1b033a7f5f42/yfSOpP7wAm.lottie</string>
+    <string name="content_description_video_cam_icon">Иконка видеокамеры</string>
+    <string name="content_description_link_icon">Иконка ссылки</string>
+    <string name="content_description_input_icon">Иконка ввода</string>
+    <string name="tab_chat">Чат</string>
+    <string name="tab_ideas">Идеи</string>
+    <string name="tab_tasks">Задачи</string>
+    <string name="title_project_name">Project name</string>
+    <string name="subtitle_member_count">1 member</string>
+    <string name="prompt_message">Сообщение</string>
+    <string name="content_description_button_attach">Кнопка прикрепить файл</string>
+    <string name="content_description_button_send">Кнопка отправить сообщение</string>
+    <string name="label_time">14:25</string>
+    <string name="label_received_message">Принятое сообщение</string>
+    <string name="label_sent_message">Отправленное сообщение</string>
+    <string name="content_description_project_image">Изображение проекта</string>
+    <string name="content_description_fab_add_task">Кнопка добавления новой задачи</string>
+    <string name="content_description_fab_add_idea">Кнопка создания идеи</string>
+    <string name="content_description_thumb_up">Кнопка лайка</string>
+    <string name="label_idea_description">Описание новой идеи</string>
+    <string name="label_thumb_up_count">1</string>
+    <string name="label_task_title">Task Title</string>
+    <string name="label_task_description">Task Description</string>
+    <string name="label_due_time">November 25</string>
+    <string name="label_email_example">user@example.com</string>
+    <string name="content_description_close">Закрыть диалог</string>
+    <string name="title_search_users">Добавить участников</string>
+    <string name="title_create_project">Создать проект</string>
+    <string name="prompt_project_name_required">Название*</string>
+    <string name="prompt_project_description">Описание (необязательно)</string>
+    <string name="label_team">Команда</string>
+    <string name="action_add">Добавить</string>
+    <string name="label_empty_search_result">Ничего не найдено</string>
+    <string name="content_description_selected_icon">Выбранный элемент списка</string>
+    <string name="user_full_name">%1$s%2$s</string>
+    <string name="error_project_name_empty">Название проекта не может быть пустым</string>
+    <string name="dialog_title_exit_confirmation">Вы уверены, что хотите выйти?</string>
+    <string name="dialog_message_exit_confirmation">Все несохраненные изменения будут потеряны</string>
+    <string name="notification_message_to_new_member">добавил Вас в проект \"%1$s\"</string>
+    <string name="option_mark_as_read">Отметить как прочитанное</string>
+    <string name="option_mark_as_unread">Отметить как непрочитанное</string>
+    <string name="option_delete">Удалить</string>
+    <string name="option_delete_and_leave_project">Удалить и покинуть проект</string>
+    <string name="dialog_title_leave_project">Покинуть проект \"%1$s\"?</string>
+    <string name="dialog_message_leave_project">Вы уверены, что хотите выйти из проекта  \"%1$s\"?</string>
+    <string name="dialog_message_transfer_ownership">Вы единственный менеджер в проекте \"%1$s\". Передайте управление другому участнику, иначе проект и всё его содержимое будут безвозвратно удалены</string>
+    <string name="action_leave">Покинуть</string>
+    <string name="option_pin">Закрепить</string>
+    <string name="option_unpin">Открепить</string>
+    <string name="error_pin_project_limit_exceeded">Закрепить можно не более 5 проектов</string>
+    <string name="message_create_new_project_to_me">Вы создали проект</string>
+    <string name="label_title_project_chat_preview">Добро пожаловать в новый проект!</string>
+    <string name="label_body_project_chat_preview">Пока здесь пусто. Начните общение с командой, отправив своё первое сообщение</string>
+    <string name="label_title_project_tasks_preview">Задач нет</string>
+    <string name="label_body_project_tasks_preview">Добавлять и назначать задачи могут все участники</string>
+    <string name="label_title_project_ideas_preview">Идей нет</string>
+    <string name="label_body_project_ideas_preview">Добавлять новые идеи могут все участники</string>
+    <string name="option_photo">Фото</string>
+    <string name="option_camera">Камера</string>
+    <string name="option_files">Файлы</string>
+    <string name="label_unknown_time">Unknown time</string>
+    <string name="label_date">1 November</string>
+    <string name="error_project_not_found">Проект не найден</string>
+    <string name="option_edit">Изменить</string>
+    <string name="option_copy">Копировать</string>
+    <string name="option_create_task">Добавить в задачи</string>
+    <string name="option_add_idea">Добавить в идеи</string>
+    <string name="option_reply">Ответить</string>
+    <string name="label_edit_message">Редактирование</string>
+    <string name="label_edited_label">изменено</string>
+    <string name="dialog_title_delete_message">Удалить сообщение?</string>
+    <string name="dialog_message_delete_message">Сообщение будет удалено для всех. Это действие нельзя отменить.</string>
+    <string name="error_pin_message_limit_exceeded">Закрепить можно не более 5 сообщений</string>
+    <string name="label_pinned_messages">Закреплённые сообщения</string>
+    <string name="label_reply_to_message">В ответ %1$s</string>
+    <string name="label_draft_message">Черновик: </string>
+    <string name="content_description_reply_message_body">Текст сообщения в ответ</string>
+    <string name="content_description_reply_close">Закрыть сообщение для ответа</string>
+    <string name="title_create_task">Создать задачу</string>
+    <string name="prompt_task_name">Новая задача</string>
+    <string name="prompt_task_description">Дополнительная информация</string>
+    <string name="label_due_date">пт, 22 нояб, 18:00</string>
+    <string name="content_description_add_assigned_user">Добавить исполнителя</string>
+    <string name="content_description_add_due">Настроить дату и время</string>
+    <string name="prompt_idea_name">Новая идея</string>
+    <string name="date_picker_title_task_due">Дата завершения задачи</string>
+    <string name="time_picker_title_task_due">Время завершения</string>
+    <string name="title_assign_member">Назначить исполнителя</string>
+    <string name="notification_message_to_assigned_member">%1$s назначил Вас исполнителем задачи \"%2$s\"</string>
+    <string name="notification_message_to_assigned_member_with_due">%1$s назначил Вас исполнителем задачи \"%2$s\". Срок исполнения до %3$s</string>
+    <string name="notification_title_new_task">У вас появилась новая задача</string>
+    <string name="notification_title_new_idea">Добавлена новая идея</string>
+    <string name="label_task_in_progress">В работе</string>
+    <string name="label_task_complete">Выполнено</string>
+    <string name="content_description_chip_image_to_upload">Изображение для загрузки</string>
+    <string name="notification_message_new_idea">%1$s придумал новую идею: %2$s"</string>
+    <string name="notification_message_send_images">прислал %1$s фото (откройте, чтобы посмотреть)</string>
+    <string name="label_file_name">file_name.txt</string>
+    <string name="warning_max_attachments">К одному сообщению можно прикрепить до 20 фотографий</string>
+    <string name="label_pinned_file">Файл</string>
+    <string name="label_pinned_photo">Фотография</string>
+    <string name="error_attach_when_editing_message">Вы не можете прикреплять файлы, пока редактируете сообщение</string>
+    <string name="label_pinned_album">Альбом</string>
+    <string name="option_task_not_completed">Задача не выполнена</string>
+    <string name="option_task_completed">Выполнить</string>
+    <string name="dialog_title_delete_task">Удалить эту задачу?</string>
+    <string name="dialog_message_delete_task">Она будет удалена для всех участников проекта.</string>
+    <string name="action_delete_for_all">Удалить для всех</string>
+    <string name="snack_bar_delete_project_success">Проект успешно удалён</string>
+    <string name="option_clear_project_history">Очистить историю</string>
+    <string name="snack_bar_clear_project_history_success">История очищена</string>
+    <string name="dialog_title_clear_project">Очистить историю?</string>
+    <string name="dialog_message_clear_project">Вы уверены, что хотите очистить историю переписки в проекте \"%1$s\"? Она будет удалена для всех участников проекта.</string>
+    <string name="action_clear">Очистить</string>
+    <string name="option_idea_vote_thumb_up">Нравится</string>
+    <string name="option_idea_vote_thumb_down">Больше не нравится</string>
+    <string name="dialog_title_delete_idea">Удалить эту идею?</string>
+    <string name="warning_file_size">Размер файла не должен превышать 5МБ</string>
+    <string name="warning_different_type_attachment">Прикреплённые файлы должны быть одного типа</string>
+    <string name="file_placeholder">%1$s - %2$.2f MB</string>
+    <string name="file_placeholder_size">%s MB</string>
+    <string name="label_file_size">1 MB</string>
+    <string name="label_file_type">TXT</string>
+    <string name="content_description_file_icon">Иконка файла</string>
+    <string name="notification_message_send_file">прислал файл (откройте, чтобы посмотреть)</string>
+    <string name="last_message_album">Альбом</string>
+    <string name="last_message_file">Файл</string>
+    <string name="last_message_image">Фотография</string>
+    <string name="label_now_in_chat_members_count">%1$d сейчас в чате</string>
+    <string name="label_integer">%1$d</string>
+    <string name="message_clear_project">очистил историю переписки</string>
+    <string name="error_unknown_url_format">Неверный формат URL</string>
+    <string name="error_no_suitable_app_found_to_open_link">Не найдено подходящего приложения для открытия этой ссылки</string>
+    <string name="label_typing">%1$s%2$s</string>
+    <string name="image_position_format">%1$d из %2$d</string>
+    <string name="label_last_online">последний раз был в сети %1$s в %2$s</string>
+    <string name="content_description_user_online_status">Пользователь в сети</string>
+    <string name="label_online">в сети</string>
+    <string name="label_media_uploaded">%1$s в %2$s</string>
+    <string name="content_description_fab_open_chat_with_user">Открыть чат с пользователем</string>
+    <string name="label_recently_online">был(а) недавно</string>
+    <string name="label_long_time_ago">был(а) давно</string>
+    <string name="content_description_user_email">Адрес электронной почты пользователя</string>
+    <string name="content_description_back">Назад</string>
+    <string name="label_yesterday_online">был(а) вчера</string>
+    <string name="label_this_week_online">был(а) на этой неделе</string>
+    <string name="label_this_month_online">был(а) в этом месяце</string>
+    <string name="label_this_year_online">был(а) в этом году</string>
+    <string name="dialog_title_warning">Предупреждение</string>
+    <string name="dialog_message_warning_username_update_processing">Ваше имя пользователя сейчас обновляется в системе. Пожалуйста, дождитесь завершения процесса перед внесением новых изменений.</string>
+    <string name="dialog_message_warning_image_update_processing">Ваше изображение сейчас обновляется в системе. Пожалуйста, дождитесь завершения процесса перед внесением новых изменений.</string>
+    <string name="option_show_view_count">Показать число просмотров</string>
+    <string name="dialog_title_message_views">Просмотры</string>
+    <string name="label_today_at_time">сегодня, в %1$s</string>
+    <string name="label_tomorrow_at_time">завтра, в %1$s</string>
+    <string name="label_one_hour_ago">1 час назад</string>
+    <string name="label_hours_ago">%1$d часов назад</string>
+    <string name="label_yesterday">вчера</string>
+    <string name="label_days_ago">%1$d дней назад</string>
+    <string name="label_weeks_ago">%1$d недель назад</string>
+    <string name="label_months_ago">%1$d месяцев назад</string>
+    <string name="label_years_ago">%1$d лет назад</string>
+    <string name="option_enable_notifications">Включить уведомления</string>
+    <string name="option_disable_notifications">Отключить уведомления</string>
+    <string name="label_you">Вы</string>
+</resources>

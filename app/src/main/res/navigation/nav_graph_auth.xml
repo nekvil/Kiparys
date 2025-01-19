@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_auth"
+    app:startDestination="@id/authRegisterFragment">
+
+    <action
+        android:id="@+id/action_to_authRegisterFragment"
+        app:destination="@id/authRegisterFragment"
+        app:popUpTo="@+id/nav_graph_auth" />
+
+    <action
+        android:id="@+id/action_nav_graph_auth_to_nav_graph"
+        app:destination="@+id/nav_graph"
+        app:popUpTo="@+id/nav_graph_auth"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/authRegisterFragment"
+        android:name="com.example.kiparys.ui.authregister.AuthRegisterFragment"
+        android:label="AuthRegistrationFragment"
+        tools:layout="@layout/fragment_auth_register">
+        <argument
+            android:name="appLink"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_registerFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.kiparys.ui.privacypolicy.PrivacyPolicyFragment"
+        android:label="Privacy Fragment"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+</navigation>

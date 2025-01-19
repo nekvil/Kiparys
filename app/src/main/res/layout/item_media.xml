@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivMedia"
+        android:layout_width="0dp"
+        android:layout_height="216dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpiMediaLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorSize="16dp"
+        app:trackThickness="2dp"
+        app:layout_constraintEnd_toEndOf="@id/sivMedia"
+        app:layout_constraintBottom_toBottomOf="@id/sivMedia"
+        android:layout_margin="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

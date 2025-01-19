@@ -1,0 +1,17 @@
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    app:liftOnScrollTargetViewId="@+id/nsvMeetingsPreview"
+    app:statusBarForeground="?attr/colorSurface">
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_search_hint"
+        app:menu="@menu/search_bar_menu" />
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kiparys.layout.NestedCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/lpiAssistant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAssistant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="64dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvAssistantPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lavAssistantInfo"
+                android:layout_width="0dp"
+                android:layout_height="232dp"
+                android:layout_marginBottom="112dp"
+                android:paddingVertical="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                app:layout_constraintWidth_percent="0.85"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_renderMode="hardware"
+                app:lottie_url="@string/animation_assistant_url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAssistantInfo"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/info_assistant_start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lavAssistantInfo"
+                app:layout_constraintWidth_percent="0.85" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:liftOnScrollTargetViewId="@+id/nsvTasksPreview"
+        app:statusBarForeground="?attr/colorSurface">
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_search_hint"
+            app:menu="@menu/search_bar_menu" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+</com.example.kiparys.layout.NestedCoordinatorLayout>

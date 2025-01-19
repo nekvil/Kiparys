@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="128dp"
+    android:layout_height="120dp"
+    android:clickable="false"
+    android:contentDescription="@string/content_description_chip_image_to_upload"
+    android:focusable="false"
+    app:chipIconSize="88dp"
+    app:closeIcon="@drawable/outline_close_24"
+    app:closeIconEnabled="true" />

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            style="?attr/collapsingToolbarLayoutLargeStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="@string/label_profile">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="0dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/outline_arrow_back_24" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sivProfileImage"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/content_description_user_profile_image"
+                android:src="@drawable/baseline_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/cpiProfileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/sivProfileImage"
+                app:layout_constraintEnd_toEndOf="@+id/sivProfileImage"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/sivProfileImage"
+                app:layout_constraintTop_toTopOf="@+id/sivProfileImage"
+                app:layout_constraintVertical_bias="0.5">
+
+            </com.google.android.material.progressindicator.CircularProgressIndicator>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center_horizontal"
+                android:text="@string/label_username"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sivProfileImage" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbEditProfileImage"
+                style="?attr/materialIconButtonFilledStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/content_description_edit_profile_image"
+                app:icon="@drawable/outline_photo_camera_24"
+                app:layout_constraintStart_toStartOf="@+id/sivProfileImage"
+                app:layout_constraintTop_toTopOf="@id/sivProfileImage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAccountSectionTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/page_title_account_section"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvUsername"
+                app:layout_constraintWidth_percent="0.85" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvAccountSectionTitle">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivEmailIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_email_icon"
+                    android:src="@drawable/outline_alternate_email_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvEmailInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvEmailInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvEmailInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvEmail" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_email"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvEmailInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvEmailInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_email"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvEmail"
+                    app:layout_constraintWidth_percent="0.85" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clEmail">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivPrivacyPolicyIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_email_icon"
+                    android:src="@drawable/outline_password_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvPasswordInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvPasswordInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvPasswordInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvPassword" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_password"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvPasswordInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPasswordInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_password"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvPassword"
+                    app:layout_constraintWidth_percent="0.85" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPersonalInfoSectionTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/page_title_personal_info_section"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clPassword"
+                app:layout_constraintWidth_percent="0.85" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFullName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvPersonalInfoSectionTitle">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivNameIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_full_name_icon"
+                    android:src="@drawable/outline_person_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvNameInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvNameInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvNameInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvName" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_full_name"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvNameInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvNameInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_full_name"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvName"
+                    app:layout_constraintWidth_percent="0.85" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAbout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clFullName">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivAboutIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_about_icon"
+                    android:src="@drawable/outline_info_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvAboutInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvAboutInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvAboutInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvAbout" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_about"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvAboutInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAboutInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_about"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvAbout"
+                    app:layout_constraintWidth_percent="0.85" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBirthdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clAbout">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivBirthdateIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_birthdate_icon"
+                    android:src="@drawable/outline_calendar_today_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvBirthdateInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvBirthdateInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvBirthdateInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvBirthdate" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvBirthdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_birthdate"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvBirthdateInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvBirthdateInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_birthdate"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvBirthdate"
+                    app:layout_constraintWidth_percent="0.85" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvSecuritySectionTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/page_title_security_section"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBirthdate"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.85" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTwoFactor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvSecuritySectionTitle">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sivTwoFactorIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_two_factor_icon"
+                    android:src="@drawable/outline_security_key_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvTwoFactorInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/mtvTwoFactorInfo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvTwoFactorInfo"
+                    app:layout_constraintTop_toTopOf="@+id/mtvTwoFactor" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTwoFactor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/label_two_factor"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvTwoFactorInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.85" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTwoFactorInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="40dp"
+                    android:text="@string/info_two_factor_disabled"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mtvTwoFactor"
+                    app:layout_constraintWidth_percent="0.85" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbDeleteAccount"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="64dp"
+                android:text="@string/action_delete_account"
+                android:textColor="?attr/colorError"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clTwoFactor"
+                app:layout_constraintWidth_max="320dp"
+                app:layout_constraintWidth_percent="0.85" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

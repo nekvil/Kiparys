@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivProjectImage"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_project_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvLastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/label_received_message"
+        android:textAppearance="@style/CustomTextAppearance.BodyMedium"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/flIndicators"
+        app:layout_constraintStart_toEndOf="@id/sivProjectImage"
+        app:layout_constraintTop_toBottomOf="@+id/mtvProjectName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/title_project_name"
+        android:textAppearance="@style/CustomTextAppearance.TitleMedium"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/mtvLastMessage"
+        app:layout_constraintEnd_toStartOf="@+id/sivNotificationOffIndicator"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/sivProjectImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivPinnedIndicator"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/baseline_keep_24dp"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvProjectName"
+        app:layout_constraintEnd_toStartOf="@+id/mtvTimestamp"
+        app:layout_constraintTop_toTopOf="@+id/mtvProjectName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivNotificationOffIndicator"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/baseline_notifications_off_24dp"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvProjectName"
+        app:layout_constraintEnd_toStartOf="@+id/sivPinnedIndicator"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mtvProjectName"
+        app:layout_constraintTop_toTopOf="@+id/mtvProjectName"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/label_time"
+        android:textAppearance="@style/CustomTextAppearance.BodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvProjectName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mtvProjectName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <FrameLayout
+        android:id="@+id/flIndicators"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTimestamp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivUnreadIndicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/baseline_circle_24"
+            android:tint="?attr/colorPrimary"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvUnreadCount"
+            style="?attr/materialCardViewFilledStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="?attr/colorSurfaceVariant"
+            android:minWidth="24dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvUnreadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginHorizontal="4.5dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxWidth="32dp"
+                android:maxLines="1"
+                android:paddingBottom="0.5dp"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

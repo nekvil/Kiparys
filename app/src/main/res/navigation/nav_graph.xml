@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_graph_projects">
+
+    <action
+        android:id="@+id/action_nav_graph_to_nav_graph_auth"
+        app:destination="@+id/nav_graph_auth"
+        app:popUpTo="@+id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_nav_graph_to_profile_fragment"
+        app:destination="@id/profileFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.kiparys.ui.profile.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="appLink"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_nav_graph_to_settings_fragment"
+        app:destination="@id/settingsFragment" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.kiparys.ui.settings.SettingsFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_settings_fragment_to_privacy_policy_fragment"
+            app:destination="@+id/privacyFragment" />
+
+        <action
+            android:id="@+id/action_settings_fragment_to_about_app_fragment"
+            app:destination="@+id/aboutAppFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.kiparys.ui.privacypolicy.PrivacyPolicyFragment"
+        android:label="Privacy Fragment"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.example.kiparys.ui.aboutapp.AboutAppFragment"
+        android:label="About App Fragment"
+        tools:layout="@layout/fragment_about_app" />
+
+    <include app:graph="@navigation/nav_graph_auth" />
+    <include app:graph="@navigation/nav_graph_projects" />
+    <include app:graph="@navigation/nav_graph_tasks" />
+    <include app:graph="@navigation/nav_graph_assistant" />
+    <include app:graph="@navigation/nav_graph_meetings" />
+
+</navigation>

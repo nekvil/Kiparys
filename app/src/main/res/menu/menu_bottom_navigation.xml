@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_graph_projects"
+        android:icon="@drawable/ic_work_selector_24"
+        android:title="@string/navigation_projects" />
+    <item
+        android:id="@+id/nav_graph_tasks"
+        android:icon="@drawable/ic_task_selector_24"
+        android:title="@string/navigation_tasks" />
+    <item
+        android:id="@+id/nav_graph_assistant"
+        android:icon="@drawable/ic_chat_selector_24"
+        android:title="@string/navigation_assistant" />
+    <item
+        android:id="@+id/nav_graph_meetings"
+        android:icon="@drawable/ic_video_chat_selector_24"
+        android:title="@string/navigation_meetings" />
+</menu>
